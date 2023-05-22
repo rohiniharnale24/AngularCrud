@@ -1,0 +1,95 @@
+{
+  "employee": [
+    {
+      "FirstName": "rohan",
+      "LastName": "haranale",
+      "Email": "rohan@gmail.com",
+      "DateofBirth": "2023-05-15T18:30:00.000Z",
+      "gender": "2",
+      "Education": "",
+      "Experience": "1",
+      "Package": "120000000",
+      "Company": "google",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "FirstName": "dsgf",
+      "LastName": "gfhgf",
+      "Email": "hgf",
+      "DateofBirth": "2023-05-22T18:30:00.000Z",
+      "gender": "1",
+      "Education": "",
+      "Experience": "",
+      "Package": "322",
+      "Company": "322"
+    },
+    {
+      "id": 3,
+      "FirstName": "jjjj",
+      "LastName": ";lkjkjk",
+      "Email": "f@gmail.com",
+      "DateofBirth": "2023-05-07T18:30:00.000Z",
+      "gender": "2",
+      "Education": "",
+      "Experience": "4",
+      "Package": "123",
+      "Company": "google"
+    },
+    {
+      "id": 4,
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "DateofBirth": "",
+      "gender": "",
+      "Education": "",
+      "Experience": "",
+      "Package": "",
+      "Company": ""
+    },
+    {
+      "id": 5,
+      "FirstName": "ewwf",
+      "LastName": "ddgdfb",
+      "Email": "fgdgf",
+      "DateofBirth": "2023-04-30T18:30:00.000Z",
+      "gender": "1",
+      "Education": "",
+      "Experience": "432234",
+      "Package": "12324",
+      "Company": "sdfdsf"
+    },
+    {
+      "id": 6,
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "DateofBirth": "",
+      "gender": "",
+      "Education": "",
+      "Experience": "",
+      "Package": "",
+      "Company": ""
+    },
+    {
+      "id": 7,
+      "FirstName": "",
+      "LastName": "",
+      "Email": "",
+      "DateofBirth": "",
+      "gender": "",
+      "Education": "",
+      "Experience": "",
+      "Package": "",
+      "Company": ""
+    }
+  ],
+  "dropdown": [
+    "Matric",
+    "diploma",
+    "intermidiate",
+    "Graduate",
+    "Post-graduate"
+  ]
+}
