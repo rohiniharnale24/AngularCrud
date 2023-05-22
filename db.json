@@ -1,55 +1,19 @@
 {
   "employee": [
     {
+      "id": 5,
       "FirstName": "rohan",
-      "LastName": "haranale",
-      "Email": "rohan@gmail.com",
-      "DateofBirth": "2023-05-15T18:30:00.000Z",
-      "gender": "2",
-      "Education": "",
-      "Experience": "1",
-      "Package": "120000000",
-      "Company": "google",
-      "id": 1
-    },
-    {
-      "id": 2,
-      "FirstName": "dsgf",
-      "LastName": "gfhgf",
-      "Email": "hgf",
-      "DateofBirth": "2023-05-22T18:30:00.000Z",
+      "LastName": "ddgdfb",
+      "Email": "fgdgf",
+      "DateofBirth": "2023-04-30T18:30:00.000Z",
       "gender": "1",
       "Education": "",
-      "Experience": "",
-      "Package": "322",
-      "Company": "322"
+      "Experience": "432234",
+      "Package": "12324",
+      "Company": "sdfdsf"
     },
     {
-      "id": 3,
-      "FirstName": "jjjj",
-      "LastName": ";lkjkjk",
-      "Email": "f@gmail.com",
-      "DateofBirth": "2023-05-07T18:30:00.000Z",
-      "gender": "2",
-      "Education": "",
-      "Experience": "4",
-      "Package": "123",
-      "Company": "google"
-    },
-    {
-      "id": 4,
-      "FirstName": "",
-      "LastName": "",
-      "Email": "",
-      "DateofBirth": "",
-      "gender": "",
-      "Education": "",
-      "Experience": "",
-      "Package": "",
-      "Company": ""
-    },
-    {
-      "id": 5,
+      "id": 10,
       "FirstName": "ewwf",
       "LastName": "ddgdfb",
       "Email": "fgdgf",
@@ -61,28 +25,26 @@
       "Company": "sdfdsf"
     },
     {
-      "id": 6,
-      "FirstName": "",
-      "LastName": "",
-      "Email": "",
-      "DateofBirth": "",
-      "gender": "",
-      "Education": "",
-      "Experience": "",
-      "Package": "",
-      "Company": ""
+      "id": 11,
+      "FirstName": "rohan",
+      "LastName": "hhhhh",
+      "Email": "rohan@gmail.com",
+      "DateofBirth": "2023-05-07T18:30:00.000Z",
+      "gender": "2",
+      "Experience": "12",
+      "Package": "7",
+      "Company": "google"
     },
     {
-      "id": 7,
-      "FirstName": "",
-      "LastName": "",
-      "Email": "",
-      "DateofBirth": "",
-      "gender": "",
-      "Education": "",
-      "Experience": "",
-      "Package": "",
-      "Company": ""
+      "id": 12,
+      "FirstName": "rrrr",
+      "LastName": "hhhhhh",
+      "Email": "hhh@gmail.com",
+      "DateofBirth": "2023-05-16T18:30:00.000Z",
+      "gender": "2",
+      "Experience": "23",
+      "Package": "12",
+      "Company": "google"
     }
   ],
   "dropdown": [

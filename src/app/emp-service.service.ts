@@ -31,6 +31,16 @@ export class EmpServiceService {
     return this._http.get('http://localhost:3000/employee');
     // this.dataSource = new MatTableDataSource();
   }
+  onDelete(id: any) {
+    return this._http.delete(`http://localhost:3000/employee/${id}`);
+  }
+  onEdit(id: any, data: any) {
+    return this._http.put(`http://localhost:3000/employee/${id}`, data);
+  }
+  getEmployeeById(id: any) {
+    return this._http.get(`http://localhost:3000/employee/${id}`);
+    // this.dataSource = new MatTableDataSource();
+  }
 }
 
 export interface FormValues {

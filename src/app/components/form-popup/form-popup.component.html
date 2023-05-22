@@ -1,7 +1,10 @@
 <div dialog-titile>
   <h1>Employee Form</h1>
 </div>
-<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+<form
+  [formGroup]="empForm"
+  (ngSubmit)="data.source == 'update' ? onUpdate() : onFormSubmit()"
+>
   <div mat-dialog-content class="content">
     <mat-spinner diameter="20" *ngIf="spinner"></mat-spinner>
     <!---name and Last Name -->

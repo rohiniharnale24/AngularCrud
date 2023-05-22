@@ -14,6 +14,17 @@ export class FormPopupComponent implements OnInit {
   dataSource: any;
   educationArray$!: string[];
   name!: string;
+  FirstName: any;
+  DateofBirth: any;
+  LastName: any;
+  Email: any;
+  gender: any;
+  Education: any;
+  Experience: any;
+  Package: any;
+  Company: any;
+  id: any;
+  source: any;
   constructor(
     private _formBuilder: FormBuilder,
     private _employeeService: EmpServiceService,
@@ -36,6 +47,17 @@ export class FormPopupComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('data', this.data);
+
+    this.empForm.get('FirstName')?.setValue(this.data.FirstName);
+    this.empForm.get('LastName')?.setValue(this.data.LastName);
+    this.empForm.get('Email')?.setValue(this.data.Email);
+    this.empForm.get('DateofBirth')?.setValue(this.data.DateofBirth);
+    this.empForm.get('gender')?.setValue(this.data.gender);
+    this.empForm.get('Education')?.setValue(this.data.Education);
+    this.empForm.get('Experience')?.setValue(this.data.Experience);
+    this.empForm.get('Package')?.setValue(this.data.Package);
+    this.empForm.get('Company')?.setValue(this.data.Company);
+
     this.name = this.data.name;
     this.onDropDownClick();
   }
@@ -75,12 +97,28 @@ export class FormPopupComponent implements OnInit {
     //here onEmployeeCreate return an observable so to subcribe this observable we have subcribe methhod
     this._employeeService.getAllEmplooyess().subscribe({
       next: (res) => {
-        this.dataSource = res;
         this._dialogRef.close({ data: res });
       },
       error: (err) => {
         console.log(err);
       },
     });
+  }
+
+  onUpdate() {
+    console.log('in update');
+
+    if (this.empForm.valid) {
+      this._employeeService.onEdit(this.data.id, this.empForm.value).subscribe({
+        next: (val: any) => {
+          console.log('res', val);
+
+          this.sendEmployeeListToParent();
+        },
+        error(err: any) {
+          console.log(err);
+        },
+      });
+    }
   }
 }

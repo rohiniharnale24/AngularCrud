@@ -32,6 +32,7 @@ export class AppComponent implements OnInit {
     'Experience',
     'Package',
     'Company',
+    'Action',
   ];
   dataSource!: any;
 
@@ -73,5 +74,35 @@ export class AppComponent implements OnInit {
     if (this.dataSource.paginator) {
       this.dataSource.paginator.firstPage();
     }
+  }
+  onDelete(id: any) {
+    console.log(id);
+    this._employeeService.onDelete(id).subscribe({
+      next: (res) => {
+        console.log('in res', res);
+        this.grtEmployeeList();
+      },
+      error: (err) => {
+        console.log(err);
+      },
+    });
+  }
+  onEdit(id: any) {
+    // this._employeeService.onEdit(id);
+    this._employeeService.getEmployeeById(id).subscribe({
+      next: (res) => {
+        this._dialog
+          .open(FormPopupComponent, {
+            data: { ...res, source: 'update' },
+          })
+          .afterClosed()
+          .subscribe((result) => {
+            this.dataSource = result.data;
+          });
+      },
+      error: (err) => {
+        console.log(err);
+      },
+    });
   }
 }
